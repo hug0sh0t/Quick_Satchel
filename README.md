@@ -7,7 +7,7 @@
 New Application insert, along with endpoints for follow system 
 
 
-## Deep Understanding
+## Deeper Details
 Giving users the ability to see all the details of the Financial information they provide
 with clear dynamic Data Driven visuals and Graphs 
 # what problem does qsatchel solve? 
