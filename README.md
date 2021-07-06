@@ -1,5 +1,5 @@
 <a href="https://www.qsatchel.com/oauth/login">
-<img  src="https://github.com/hug0sh0t/Quick_Satchel/blob/master/MainGithubLogo.svg" width="80%" />
+<img  src="https://github.com/hug0sh0t/Quick_Satchel/blob/master/awesome.svg" width="80%" />
  </a>
  
 
