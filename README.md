@@ -17,7 +17,7 @@ QuickSatchel is very easy to set up, and the User Interface that I created is ve
 Aside from the speed that Quick Satchel Provides, It also gives users the chance to visualize their expenses.
 
 
-# How The Percentage Allocation Doughnut Engine was made
+# How The Percentage Allocation Doughnut (PAD) Engine was made
 
   
     for p in user_pockets: # user_pockets is the obj, holding the users pocket values
@@ -34,8 +34,24 @@ Aside from the speed that Quick Satchel Provides, It also gives users the chance
     for negW in negativeWeights:
         negativeWeightTotal += negW      # the negative percentage w/r to abs sum
 
+# High Level Summary of PAD
+taking each abs pocket with respect to the absolute value sum gives the user insight on the magnitude of each pocket.
 
-             
+...
+        if p.price >= 0:      
+            positiveWeights.insert(0, (abs(p.price)/int(absoluteSatchel))*100)    
+        else:
+            negativeWeights.insert(0, (abs(p.price)/int(absoluteSatchel))*100)
+...
+
+    for posW in positiveWeights:
+        positiveWeightTotal += posW      # the postive percentage w/r to abs sum
+    for negW in negativeWeights:
+        negativeWeightTotal += negW      # the negative percentage w/r to abs sum
+...       
+
+
+seperates the negative and postive weights
 
 # Acknowledgements
 The reason for including Third-Party Social Authentication, is to give users fastest route to becoming an authenticated member  
