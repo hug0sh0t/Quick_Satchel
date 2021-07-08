@@ -27,7 +27,7 @@ Aside from the speed that Quick Satchel Provides, It also gives users the chance
         else:
             negativeWeights.insert(0, (abs(p.price)/int(absoluteSatchel))*100)
      # Percentage Algorithm 
-     dynamicPercentArray.insert(0, (abs(p.price)/int(absoluteSatchel))*100)
+        dynamicPercentArray.insert(0, round((abs(p.price)/int(absoluteSatchel))*100, 5)) # adding round(%array , 5)  
 
     for posW in positiveWeights:
         positiveWeightTotal += posW      # the postive percentage w/r to abs sum
@@ -37,21 +37,18 @@ Aside from the speed that Quick Satchel Provides, It also gives users the chance
 # High Level Summary of PAD
 taking each abs pocket with respect to the absolute value sum gives the user insight on the magnitude of each pocket.
 
-...
-        if p.price >= 0:      
-            positiveWeights.insert(0, (abs(p.price)/int(absoluteSatchel))*100)    
-        else:
-            negativeWeights.insert(0, (abs(p.price)/int(absoluteSatchel))*100)
-...
+
 
     for posW in positiveWeights:
         positiveWeightTotal += posW      # the postive percentage w/r to abs sum
     for negW in negativeWeights:
         negativeWeightTotal += negW      # the negative percentage w/r to abs sum
+    # seperates the negative and postive magnitudes
+
 ...       
 
 
-seperates the negative and postive weights
+
 
 # Acknowledgements
 The reason for including Third-Party Social Authentication, is to give users fastest route to becoming an authenticated member  
