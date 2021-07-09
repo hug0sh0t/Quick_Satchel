@@ -45,7 +45,7 @@ taking each abs pocket with respect to the absolute value sum gives the user ins
         negativeWeightTotal += negW      # the negative percentage w/r to abs sum
     # seperates the negative and postive magnitudes
 
-...       
+... data is pulled from libraries created in the views        
 
 
 
