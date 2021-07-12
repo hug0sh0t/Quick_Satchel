@@ -29,11 +29,7 @@ Aside from the speed that Quick Satchel Provides, It also gives users the chance
      # Percentage Algorithm 
         dynamicPercentArray.insert(0, round((abs(p.price)/int(absoluteSatchel))*100, 5)) # adding round(%array , 5)  
 
-    for posW in positiveWeights:
-        positiveWeightTotal += posW      # the postive percentage w/r to abs sum
-    for negW in negativeWeights:
-        negativeWeightTotal += negW      # the negative percentage w/r to abs sum
-
+    
 # High Level Summary of PAD
 taking each abs pocket with respect to the absolute value sum gives the user insight on the magnitude of each pocket.
 
@@ -45,7 +41,8 @@ taking each abs pocket with respect to the absolute value sum gives the user ins
         negativeWeightTotal += negW      # the negative percentage w/r to abs sum
     # seperates the negative and postive magnitudes
 
-... data is pulled from libraries created in the views        
+... data is pulled from the views configuration
+The Information given from the user is dynamically inserted into libraries , which is than used to create my graphs 
 
 
 
